@@ -1,7 +1,6 @@
 gsap.from('.navbar',  {duration:1, opacity:0})
 gsap.from('.ltr', { duration:1, opacity:0, x: '-100%'})
 gsap.from('.rtl', { duration:1, opacity:0, x: '100%'})
-// gsap.from('.fade1', { duration: 1, opacity:0 })
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -63,4 +62,32 @@ gsap.from('.utd5',{
     y:50,
     duration:0.6,
     opacity:0
+})
+
+gsap.from('.ca', {
+    scrollTrigger:{
+        trigger:'.ca',
+        toggleActions: "restart pause none none"
+    },
+    duration:0.6,
+    opacity:0,
+    delay: 0.5
+})
+gsap.from('.cb', {
+    scrollTrigger:{
+        trigger:'.cb',
+        toggleActions: "restart pause none none"
+    },
+    duration:0.8,
+    opacity:0,
+    delay:0.5
+})
+gsap.from('.cc', {
+    scrollTrigger:{
+        trigger:'.cc',
+        toggleActions: "restart pause none none"
+    },
+    duration:0.6,
+    opacity:0,
+    delay:0.8
 })
